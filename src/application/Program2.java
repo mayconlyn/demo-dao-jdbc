@@ -4,6 +4,7 @@ import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Program2 {
@@ -27,6 +28,13 @@ public class Program2 {
         dp.setName("Musician");
         departmentDao.update(dp);
         System.out.println("Update Completed!");
+
+        System.out.println("====== Test 4: FindAll ======");
+        List<Department> list = departmentDao.findAll();
+
+        for(Department obj : list){
+            System.out.println(obj);
+        }
 
 
     }
