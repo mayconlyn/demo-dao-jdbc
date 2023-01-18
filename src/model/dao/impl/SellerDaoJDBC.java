@@ -45,7 +45,7 @@ public class SellerDaoJDBC implements SellerDao {
                 DB.closeResultSet(rs);
             }
             else{
-                throw new DbException("Erro inexperado!");
+                throw new DbException("Erro inesperado!");
             }
 
         }catch (SQLException e){
